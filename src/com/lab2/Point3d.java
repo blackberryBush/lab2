@@ -26,7 +26,7 @@ public class Point3d {
         dist = (int)dist;
         return dist / 100;
     }
-    public static void main(String[] args)
+    public static void main(String[] args) // основной метод
     {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите 3 координаты: ");
@@ -42,9 +42,9 @@ public class Point3d {
         Point2.setX(x1); Point2.setY(y1); Point2.setZ(z1); // устанавливаем значения с помощью методов
         System.out.println("(" + Point1.getX() + "," + Point1.getY() + "," + Point1.getZ() + ")"); // выводим первый объект
         System.out.println("(" + Point2.getX() + "," + Point2.getY() + "," + Point2.getZ() + ")"); // выводим второй объект
-        if (comparison(Point1, Point2))
+        if (comparison(Point1, Point2)) // проверка на равенство значений
             System.out.println("Значения объектов равны.");
         else System.out.println("Значения объектов НЕ равны.");
-        System.out.println("Расстояние между объектами: " + Point1.distanceTo(Point2));
+        System.out.println("Расстояние между объектами: " + Point1.distanceTo(Point2)); // вывод расстояния между точками
     }
 }
